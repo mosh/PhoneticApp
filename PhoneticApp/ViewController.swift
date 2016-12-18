@@ -80,9 +80,6 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning()
@@ -106,7 +103,7 @@ extension ViewController : UICollectionViewDelegateFlowLayout
             + flowLayout.sectionInset.right
             + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfItemsPerRow - 1))
         let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(numberOfItemsPerRow))
-        return CGSize(width: size, height: 50)
+        return CGSize(width: size, height: 38)
     }
     
 }
